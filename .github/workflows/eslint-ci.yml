@@ -1,15 +1,8 @@
 name: ESLint Code Quality Checks
 
 on:
-  pull_request:
-    branches:
-      - main
-      - dev
-      - release/*
-    paths:
-      - 'api/**'
-      - 'client/**'
-
+  push:
+    branches: [main]
 jobs:
   eslint_checks:
     name: Run ESLint Linting
