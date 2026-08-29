@@ -1,15 +1,8 @@
 name: Frontend Unit Tests
 
 on:
-  pull_request:
-    branches: 
-      - main
-      - dev
-      - release/*
-    paths:
-      - 'client/**'
-      - 'packages/**'
-
+  push:
+    branches: [main]
 jobs:
   tests_frontend_ubuntu:
     name: Run frontend unit tests on Ubuntu
