@@ -1,12 +1,8 @@
 name: Detect Unused i18next Strings
 
 on:
-  pull_request:
-    paths:
-      - "client/src/**"
-      - "api/**"
-      - "packages/data-provider/src/**"
-
+  push:
+    branches: [main]
 jobs:
   detect-unused-i18n-keys:
     runs-on: ubuntu-latest
