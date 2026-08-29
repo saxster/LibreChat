@@ -1,6 +1,8 @@
 name: Update Test Server
 
 on:
+  push:
+    branches: [main]
   workflow_run:
     workflows: ["Docker Dev Branch Images Build"]
     types:
