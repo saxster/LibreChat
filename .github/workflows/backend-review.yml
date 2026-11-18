@@ -1,7 +1,5 @@
 name: Backend Unit Tests
-on:
-  push:
-    branches: [main]
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   tests_Backend:
     name: Run Backend unit tests

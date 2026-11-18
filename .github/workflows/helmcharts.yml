@@ -1,11 +1,7 @@
 name: Build Helm Charts on Tag
 
 # The workflow is triggered when a tag is pushed
-on:
-  push:
-    tags:
-      - "*"
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   release:
     permissions:

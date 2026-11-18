@@ -1,10 +1,6 @@
 name: Generate Unreleased Changelog PR
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   generate-unreleased-changelog-pr:
     permissions:

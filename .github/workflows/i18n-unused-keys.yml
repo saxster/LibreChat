@@ -1,8 +1,6 @@
 name: Detect Unused i18next Strings
 
-on:
-  push:
-    branches: [main]
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   detect-unused-i18n-keys:
     runs-on: ubuntu-latest

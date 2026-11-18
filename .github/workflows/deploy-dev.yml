@@ -1,14 +1,6 @@
 name: Update Test Server
 
-on:
-  push:
-    branches: [main]
-  workflow_run:
-    workflows: ["Docker Dev Branch Images Build"]
-    types:
-      - completed
-  workflow_dispatch:
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   deploy:
     runs-on: ubuntu-latest

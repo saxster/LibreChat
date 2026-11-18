@@ -1,15 +1,6 @@
 name: Docker Dev Images Build
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'api/**'
-      - 'client/**'
-      - 'packages/**'
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   build:
     runs-on: ubuntu-latest

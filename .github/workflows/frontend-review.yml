@@ -1,8 +1,6 @@
 name: Frontend Unit Tests
 
-on:
-  push:
-    branches: [main]
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   tests_frontend_ubuntu:
     name: Run frontend unit tests on Ubuntu

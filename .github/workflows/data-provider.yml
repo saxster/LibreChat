@@ -1,12 +1,6 @@
 name: Node.js Package
 
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'packages/data-provider/package.json'
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   build:
     runs-on: ubuntu-latest

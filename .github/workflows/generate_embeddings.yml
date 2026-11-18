@@ -1,12 +1,5 @@
 name: 'generate_embeddings'
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   generate:
     runs-on: ubuntu-latest

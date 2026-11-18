@@ -1,15 +1,6 @@
 name: Lint for accessibility issues
 
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
-    inputs:
-      run_workflow:
-        description: 'Set to true to run this workflow'
-        required: true
-        default: 'false'
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   axe-linter:
     runs-on: ubuntu-latest

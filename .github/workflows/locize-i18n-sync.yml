@@ -1,11 +1,6 @@
 name: Sync Locize Translations & Create Translation PR
 
-on:
-  push:
-    branches: [main]
-  repository_dispatch:
-    types: [locize/versionPublished]
-
+on: {} # Disabled: local verification only (owner policy, 2026-11-18).
 jobs:
   sync-translations:
     name: Sync Translation Keys with Locize
